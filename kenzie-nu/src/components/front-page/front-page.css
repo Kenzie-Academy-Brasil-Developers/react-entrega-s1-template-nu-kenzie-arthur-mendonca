@@ -1,0 +1,91 @@
+/* @import ".src/Global/globalstyles.css"; */
+
+body {
+  color: white;
+}
+
+.main__wrapper {
+  background-color: #212529;
+  height: 100%;
+  padding: 0px 25px;
+  width: 100%;
+}
+
+.header__wrapper {
+  display: flex;
+}
+
+.header__wrapper > p {
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
+  position: relative;
+  top: 30px;
+}
+
+.nu__word {
+  color: #fd377e;
+  font-size: 22px;
+}
+.kenzie__word-front {
+  color: white;
+  font-size: 22px;
+}
+
+.lower__div {
+  background-image: url("/src/assets/imagem-front-page-bg.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.frontPage__section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  top: 4em;
+}
+
+.frontPage__section > h1 {
+  text-align: initial;
+}
+.frontPage__section > p {
+  text-align: initial;
+  position: relative;
+  bottom: 1em;
+}
+
+.frontPage__section > button {
+  width: 20rem;
+  align-self: flex-start;
+  background-color: #fd377e;
+  border-radius: 10px;
+  height: 40px;
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
+  padding-right: 1em;
+}
+
+.lower__div {
+  position: relative;
+  bottom: 7em;
+}
+
+@media (min-width: 426px) {
+  .main__wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4em;
+  }
+
+  .header__wrapper {
+    position: relative;
+    top: 3em;
+  }
+
+  .lower__div {
+    width: 100%;
+  }
+}
