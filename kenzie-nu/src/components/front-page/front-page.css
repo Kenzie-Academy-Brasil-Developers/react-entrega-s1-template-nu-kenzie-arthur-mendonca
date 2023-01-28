@@ -78,6 +78,14 @@ body {
     display: flex;
     flex-direction: row;
     padding-top: 4em;
+    justify-content: center;
+  }
+
+  .main__sub-wrapper {
+    max-width: 52rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
 
   .header__wrapper {

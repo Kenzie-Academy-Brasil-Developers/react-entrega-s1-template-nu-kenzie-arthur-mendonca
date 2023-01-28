@@ -1,0 +1,124 @@
+.form-resumo__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input__form {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 88vw;
+  max-height: max-content;
+}
+
+.div__descricao {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.value__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.valor__div {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+}
+
+.valor__div > p {
+  position: relative;
+  left: -4em;
+}
+
+.valor__inside-div {
+  display: flex;
+  align-items: center;
+}
+
+.valor__inside-div > input {
+  border-radius: 8px;
+  padding: 10px 13px;
+}
+.erre-cifrao,
+.valor__inside-div {
+  padding: 10px 13px;
+  border-radius: 8px;
+}
+
+.tipoDeValor__div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.inserir__button {
+  align-self: center;
+  border: none;
+  width: 22rem;
+  background-color: #fd377e;
+  border-radius: 10px;
+  height: 3.5rem;
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+#select {
+  background-color: white;
+  padding: 10px 13px;
+  border-radius: 8px;
+}
+
+.showSum__div {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.disclaimer__div {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3rem;
+}
+
+.totalValue__text {
+  font-weight: bold;
+  font-size: large;
+}
+
+.totalSum__section {
+  max-width: 24.9rem;
+  border: solid var(--grey4) 1px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.totalValue__text-number {
+  color: #fd377e;
+  font-weight: bold;
+}
+
+.disclaimer__div {
+  font-weight: lighter;
+}
+
+@media (min-width: 426px) {
+  .input__form {
+    border: solid var(--grey4) 1px;
+
+    border-radius: 8px;
+    padding: 1em;
+    border-radius: 8px;
+  }
+
+  .form-resumo__wrapper {
+    flex-direction: row;
+  }
+}

@@ -14,7 +14,7 @@ function App() {
       {showFront ? (
         <FrontPage frontPage={showFront} setState={setShowFront} />
       ) : (
-        <Dashboard setState={setShowFront} />
+        <Dashboard setShowFront={setShowFront} />
       )}
     </div>
   );
