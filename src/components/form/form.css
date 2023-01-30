@@ -75,38 +75,11 @@
   border-radius: 8px;
 }
 
-.showSum__div {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.disclaimer__div {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 3rem;
-}
-
-.totalValue__text {
-  font-weight: bold;
-  font-size: large;
-}
-
 .totalSum__section {
   max-width: 24.9rem;
   border: solid var(--grey4) 1px;
   margin-top: 10px;
   border-radius: 8px;
-}
-
-.totalValue__text-number {
-  color: #fd377e;
-  font-weight: bold;
-}
-
-.disclaimer__div {
-  font-weight: lighter;
 }
 
 @media (min-width: 426px) {

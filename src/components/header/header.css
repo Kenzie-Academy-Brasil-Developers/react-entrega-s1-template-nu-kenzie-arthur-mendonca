@@ -1,0 +1,37 @@
+.dashboard__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em 1em;
+  width: 100%;
+  max-width: 425px;
+  margin: auto;
+}
+
+.header__div-up {
+}
+
+.nu__word {
+  color: #fd377e;
+}
+
+.kenzie__word {
+  color: rgb(12, 12, 12);
+}
+
+.kenzie__word,
+.nu__word {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.header__div-down {
+}
+
+@media (min-width: 426px) {
+  .dashboard__header {
+    max-width: inherit;
+    width: 100%;
+    justify-content: space-around;
+  }
+}

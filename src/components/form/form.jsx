@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./form.css";
 import Resumo from "../resumo/resumo";
-import TotalSum from "../totalSum/totalSum";
+import Total from "../total/total";
+import Input from "../input/input";
 
 function Form() {
   const [dataID, setDataID] = useState(1);
@@ -29,28 +30,14 @@ function Form() {
     }
   };
 
-  const totalValue = () => {
-    return formArray
-      .map((e) => e.valor)
-      .reduce((accumulator, currentValue) => {
-        return accumulator + currentValue;
-      }, 0);
-  };
-
   return (
     <div>
       <div className="form-resumo__wrapper">
         <form className="input__form" onSubmit={handleSubmit}>
           <div className="div__descricao">
             <p>Descrição</p>
-            <input
-              value={formData.descricao}
-              type="text"
-              placeholder="Digite a descrição aqui"
-              onChange={(event) =>
-                setFormData({ ...formData, descricao: event.target.value })
-              }
-            />
+            <Input formData={formData} setFormData={setFormData} />
+
             <p>Ex: compra de roupa</p>
           </div>
 
@@ -95,18 +82,10 @@ function Form() {
         </section>
       </div>
       <section className="totalSum__section">
-        <div className="showSum__div">
-          <p className="totalValue__text">Valor total</p>
-          <p className="totalValue__text-number">R$ {totalValue()}</p>
-        </div>
-        <div className="disclaimer__div">
-          <span>O valor se refere ao saldo</span>
-        </div>
+        <Total formArray={formArray} />
       </section>
     </div>
   );
 }
 
 export default Form;
-
-//

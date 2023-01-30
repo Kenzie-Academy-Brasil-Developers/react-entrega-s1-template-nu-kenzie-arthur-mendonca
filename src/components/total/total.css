@@ -1,0 +1,23 @@
+.showSum__div {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.totalValue__text {
+  font-weight: bold;
+  font-size: large;
+}
+
+.totalValue__text-number {
+  color: #fd377e;
+  font-weight: bold;
+}
+
+.disclaimer__div {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3rem;
+  font-weight: lighter;
+}
